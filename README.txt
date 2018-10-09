@@ -3,8 +3,8 @@ E-vent
 Website: e-vent.github.io
 
 ##### Description #####
-
-TODO
+This software is a user friendly application, that help the user plan out a event, while taking in 
+consideration the scheduale of all the people that re invited.
 
 ##### Team #####
 
