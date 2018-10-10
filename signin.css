@@ -1,0 +1,14 @@
+.g-signin2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    font-size: 10px !important;
+}
+main {  
+    display: flex;
+    flex-wrap: wrap;
+    height : 100%
+
+}
