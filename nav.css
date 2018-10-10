@@ -1,6 +1,6 @@
 @charset "UTF-8";
 nav, .navsize {
-height: 41px;
+height: 45px;
 }
 nav a {
 display: flex;
@@ -13,9 +13,10 @@ color: black;
 nav {
 position: fixed;
 list-style-type: none;
-background-color: white;
-border-bottom:1px solid lightgray;
+background-color: #F7F7F7;
 width: 100%;
+box-shadow: -1px 3px 10px 1px rgba(143,141,143,0.6);
+
 }
 nav>li {
 float: right;
@@ -44,7 +45,7 @@ nav>li>div>a:hover {
 background-color: #F1F1F1
 }
 #nav-j {
-background-color: purple;
+background-color: #A1a5ff;
 }
 #nav-j>span {
 color: white;
