@@ -16,6 +16,7 @@ list-style-type: none;
 background-color: #F7F7F7;
 width: 100%;
 box-shadow: -1px 3px 10px 1px rgba(143,141,143,0.6);
+z-index: 2;
 
 }
 nav>li {
@@ -45,8 +46,22 @@ nav>li>div>a:hover {
 background-color: #F1F1F1
 }
 #nav-j {
-background-color: #A1a5ff;
+opacity: 0,6;
+background-color: #7C7FC1;
+transition:0.3;
+}
+#nav-j:hover{
+opacity:1;
 }
 #nav-j>span {
 color: white;
+}
+.MainLogo{
+transition: .5s;
+width:100px;
+height: 140%;
+cursor: pointer;
+z-index:2;
+float:left;
+margin-bottom:10px;
 }
