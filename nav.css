@@ -1,6 +1,6 @@
 @charset "UTF-8";
 nav, .navsize {
-height: 41px;
+height: 42px;
 }
 nav a {
 display: flex;
@@ -12,6 +12,7 @@ color: black;
 }
 nav {
 position: fixed;
+top: 0px;
 list-style-type: none;
 background-color: white;
 border-bottom:1px solid lightgray;
