@@ -1,1 +1,13 @@
 @charset "UTF-8";
+.h {
+text-align:center;
+line-height:165px;
+}
+.t{
+font-size:50px;
+}
+.i {
+text-align:center;
+top:225px;
+left:15px;
+}
