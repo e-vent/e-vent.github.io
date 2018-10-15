@@ -9,9 +9,9 @@ align-items: center;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+margin: 0;
 }
 body, html {
 scroll-behavior: smooth;
 height: 100%;
-margin: 0;
 }
