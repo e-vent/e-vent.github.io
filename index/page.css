@@ -7,15 +7,18 @@ background-position: center;
 height: 100vh;
 margin: 0;
 background-attachment:fixed;
+display: flex;
+flex-direction: column;
 }
 .Logbox {
 margin-top: 180px;
 text-align: center;
 }
 .logo {
+background-image: url("../logo/LogoNodash.png");
 transition: all .2s ease-in-out;
 border: 1px solid #;
-width:240px;
+width: 240px;
 height: 210px;
 border-radius: 4px;
 cursor: pointer;
@@ -38,9 +41,6 @@ margin: 0;
 }
 #bg2 {
 background-image: url("Bg2.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
 height: 100vh;
 margin: 0;
 background-attachment: fixed;
@@ -51,6 +51,6 @@ width: 60px;
 height: 60px;
 cursor: pointer;
 }
-.dbtnBox{
+.dbtnBox {
 text-align: center;
 }
