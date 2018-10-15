@@ -3,26 +3,34 @@ The e-vent.github.io "build" system
 ### Features ###
 
 The build system scripts can be used to update the nav in all files.
+After a rewrite, you can now edit files and open them in your browser to test before building.
 
 ### Description ###
 
-It appends files in this order:
-1. _common_header.html
-2. <filename>.html
-3. _common_footer.html
-When it reads those files, it removes the newlines at the end.
+It copies the header and footer from template.html to all other ".html" files without "_".
 
 Then it replaces these "transforms" with their values:
 - $$$BUILDSCRIPT$MY_NAME$$$
 - $$$BUILDSCRIPT$TITLE$$$
-- $$$BUILDSCRIPT$LINK$<name without .html>$$$
-A full list can be found in the source of updatefiles.py. If an unsupported transform is used (note transforms start with "$$$BUILDSCRIPT"), then you will get a warning when building.
+- $$$BUILDSCRIPT$LINK$[name without .html]$$$
+- <!--BUILDSCRIPT-SUB-START$$$-->[content]<!--$$$BUILDSCRIPT-SUB-MIDDLE$$$[content]$$$BUILDSCRIPT-SUB-END-->
+All the text transformers can be found in the EventBuildSystem project-repo.
 
 ### Recommended Usage ###
 
-- Do not touch _content.html if using this method.
-1. Edit <name>.html as you normally would.
-2. In bash, run python3 ./backport.py
-3. In bash, run python3 ./updatefiles.py
-4. Check git diff
-5. Commit
+Do not touch the headers and footers in any HTML file other than template.html.
+
+To update the header:
+1. Edit template.html
+2. Run "git add ." to save your work
+3. Run EventBuildSystem.jar
+4. Check all pages are working
+5. Run "git add ." and "git commit" to finish
+The non-header non-footer parts of template.html can be edited without any effect on other HTML files.
+
+To edit normal files:
+1. Simply edit your page as normal
+2. Run "git add ." to save your work
+3. Run EventBuildSystem.jar
+4. Make sure your work is still there
+5. Run "git add ." and "git commit" to finish
