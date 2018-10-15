@@ -13,9 +13,11 @@ color: black;
 nav {
 position: fixed;
 list-style-type: none;
-background-color: white;
+background-color: #F7F7F7;
 border-bottom:1px solid lightgray;
 width: 100%;
+box-shadow: -1px 3px 10px 1px rgba(143,141,143,0.6);
+z-index: 2;
 }
 nav>li {
 float: right;
@@ -44,8 +46,22 @@ nav>li>div>a:hover {
 background-color: #F1F1F1
 }
 #nav-j {
-background-color: purple;
+opacity: 0.6;
+background-color: #A1A5FF;
+transition: 0.3;
+}
+#nav-j:hover {
+opacity: 1;
 }
 #nav-j>span {
 color: white;
+}
+.MainLogo{
+transition: .5s;
+width:100px;
+height: 140%;
+cursor: pointer;
+z-index:2;
+float:left;
+margin-bottom:10px;
 }
