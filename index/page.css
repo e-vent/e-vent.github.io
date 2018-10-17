@@ -14,15 +14,15 @@ flex-direction: column;
 margin-top: 180px;
 text-align: center;
 }
-.logo {
+#logo {
 background-image: url("../logo/LogoNodash.png");
 transition: all .2s ease-in-out;
-border: 1px solid #;
 width: 240px;
 height: 210px;
 border-radius: 4px;
 cursor: pointer;
 z-index: 1;
+opacity:1;
 }
 .logo:hover {
 transform: scale(1.3);
