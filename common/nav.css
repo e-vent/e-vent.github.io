@@ -6,8 +6,6 @@ nav a {
 display: flex;
 width: 100%;
 height: 100%;
-}
-nav span {
 color: white;
 font-size: 19px;
 }
@@ -18,16 +16,18 @@ background-color: #EDEDED;
 width: 100%;
 box-shadow:none;
 z-index: 2;
-transition: 0.5s;
+transition: 0.3s;
 background-color: transparent;
+
 }
 nav>li {
 float: right;
 width: 100px;
 height: 100%;
 }
-nav>li:hover>a {
-background-color: lightgray;
+nav a :hover{
+background-color:transparent;
+color:#7C7FC1;
 }
 nav>li>div {
 display: none;
@@ -46,10 +46,9 @@ justify-content: left;
 }
 nav>li>div>a:hover {
 color: #A1A5FF;
-background-color:transparent;
+background-color:gray;
 }
 #nav-j {
-opacity: 0.6;
 background-color: transparent;
 transition: 0.3;
 }
