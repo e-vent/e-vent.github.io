@@ -1,4 +1,11 @@
 
+LOOK AND FEEL:
+- Not too dull like black and white
+- Not too casual like red and orange
+- A good mix is purple, white, and blue
+- User should be led into looking at the list of events
+- All pages must be as easy for the user to use as Apple products
+
 BRANCHES:
 "feature-something" - New things added
 "fix-something" - Fix a bug. No new things added
@@ -8,16 +15,30 @@ BRANCHES:
 "master" - Published to GitHub pages. No mistakes may be made here
 
 WEBSITE FEATURES
+To learn more, see the PowerPoint sides
+All pages:
+- Noto Sans font
 Navigation Bar:
-- Login/ sign up = pop button
+- Login/Sign up = pop button
 - Unified appearance between all pages
+- On pages with BG images: Starts transparent then changes to actual style after scrolling
+Footer:
+- Miscellaneous links
+- Might use a different font
+- User should not be interested in the footer
 Navigation Bar Buttons:
 - Darken on hover
 - Ripple when pressed
 - Preview of page/section on hover
+- Like GitHub (search bar more like Google Drive)
 Welcome Page (index.html):
 - User should see all marketing by scrolling down instead of clicking
-- Many section
+- Many sections
+- Alternate between image and background color
+- Carousel of new events
+- Like GitHub homepage
+Help style:
+- Spoiler collapsed elements
 Profile Page:
 - Follow option
 Event planning (webapp itself):
@@ -41,9 +62,9 @@ HTML must:
 - Have the same header & footer as template.html (don't let your work be deleted after running EventBuildSystem.jar)
 Javascript
 - Use single quotes ('') instead of ("")
-- Run after document.ready not immediately
+- Run after document.ready instead of immediately
 - Not be inline
-- Maps applying CSS must be editable with the same amount of lines changed as CSS
+- Must not apply CSS style directly, but apply CSS classes
 - Use JQuery whenever simpler
 
 COLOURS
