@@ -1,0 +1,23 @@
+WEBSITE FEATURES
+
+Scroll down 
+Navigation bar
+2 pages 
+Login/ sign up = pop button
+Change colour when you hover over button 
+Preview of page/section when you hover over button
+Options of places + time 
+friends / follow option 
+
+COLOUR SCHEMES
+
+5271ff (Same colour as logo)
+8e0ce8
+Daf (purple)
+Alternate between Gray & White background ++ pictures 
+9effb
+A1a5ff
+Ba8fe8
+9effb
+92f5bc
+
