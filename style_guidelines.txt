@@ -1,0 +1,58 @@
+
+BRANCHES:
+"feature-something" - New things added
+"fix-something" - Fix a bug. No new things added
+"cleanup-something" - Clean up code, with no visual changes
+"dev" - Working copy.
+"approved" - Same as "dev" but with code style fixed
+"master" - Published to GitHub pages. No mistakes may be made here
+
+WEBSITE FEATURES
+Navigation Bar:
+- Login/ sign up = pop button
+- Unified appearance between all pages
+Navigation Bar Buttons:
+- Darken on hover
+- Ripple when pressed
+- Preview of page/section on hover
+Welcome Page (index.html):
+- User should see all marketing by scrolling down instead of clicking
+- Many section
+Profile Page:
+- Follow option
+Event planning (webapp itself):
+- Options of places + time
+
+CODE STYLE
+All files must:
+- Have 1 newline at end of file
+- Not have whitespace (spaces, tabs) after the end of a line
+- Use LF instead of CRLF
+- Not use indentation (indent in a JS block or between HTML tags or CSS selectors, it litters the Git log with changes)
+CSS selector line must:
+- Not start with whitespace
+- Have " ", ">", or ", " between names (exactly)
+- Have a space before the brace
+- Rest only in the folder "/common" or the folder with the same names as the HTML file minus ".html".
+- Not be inline (in the HTML file) unless applied by JQuery
+HTML must:
+- Use HTML5
+- Close self-closing tags explicitly like "<br />" instead of "<br>"
+- Have the same header & footer as template.html (don't let your work be deleted after running EventBuildSystem.jar)
+Javascript
+- Use single quotes ('') instead of ("")
+- Run after document.ready not immediately
+- Not be inline
+- Maps applying CSS must be editable with the same amount of lines changed as CSS
+- Use JQuery whenever simpler
+
+COLOURS
+- 0x5271FF (Same colour as logo)
+- 0x8E0CE8
+- 0xDDAAFF (purple)
+- Alternate between Gray & White background ++ pictures
+- 0x9EFFB
+- 0xA1A5FF
+- 0xBA8FE8
+- 0x92F5BC
+

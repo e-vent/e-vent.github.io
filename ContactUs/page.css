@@ -1,13 +1,39 @@
 @charset "UTF-8";
 .h {
-text-align:center;
-line-height:165px;
+text-align: center;
+line-height: 165px;
 }
-.t{
+.t {
 font-size:50px;
 }
 .i {
-text-align:center;
-top:225px;
-left:15px;
+display: flex;
+top: 225px;
+left: 15px;
+}
+.i>a {
+padding-left: 2px;
+padding-right: 2px;
+}
+.i>a>div {
+height: 150px;
+width: 150px;
+}
+#ytbtn>div {
+background-image: url("youtube.png")
+}
+#twbtn>div {
+background-image: url("twitter.png")
+}
+#igbtn>div {
+background-image: url("instagram.png")
+}
+#inbtn>div {
+background-image: url("linkedin.png")
+}
+#scbtn>div {
+background-image: url("snapchat.png")
+}
+#fbbtn>div {
+background-image: url("facebook.png")
 }
