@@ -6,35 +6,46 @@ nav a {
 display: flex;
 width: 100%;
 height: 100%;
+}
+nav span {
+transition: all 5s;
 color: white;
 font-size: 19px;
+}
+html.nav-scrolled nav span {
+color: black;
+font-size: 17px;
 }
 nav {
 position: fixed;
 list-style-type: none;
-background-color: #EDEDED;
 width: 100%;
-box-shadow:none;
+box-shadow: none;
 z-index: 2;
-transition: 0.3s;
+transition: all 10s;
 background-color: transparent;
-
+}
+html.nav-scrolled nav {
+height: 41px;
+background-color: white;
+color: black;
+box-shadow: -1px 3px 10px 1px rgba(143,141,143,0.6);
 }
 nav>li {
 float: right;
 width: 100px;
 height: 100%;
 }
-nav a :hover{
-background-color:transparent;
-color:#7C7FC1;
+nav a :hover {
+background-color: transparent;
+color: #7C7FC1;
 }
 nav>li>div {
 display: none;
 position: absolute;
 background-color:lightgray;
 width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 nav>li:hover>div {
 display: block;
@@ -46,11 +57,14 @@ justify-content: left;
 }
 nav>li>div>a:hover {
 color: #A1A5FF;
-background-color:gray;
+background-color: gray;
 }
 #nav-j {
 background-color: transparent;
-transition: 0.3;
+transition: all 10s;
+}
+.nav-scrolled #nav-j {
+background-color: #A1A5FF;
 }
 #nav-j:hover {
 opacity: 1;
@@ -58,15 +72,19 @@ opacity: 1;
 #nav-j>span {
 color: #A1A5FF;
 }
+.nav-scrolled #nav-j>span {
+color: white;
+}
 #MainLogo {
 background-image: url("../logo/LogoNodashColor.png");
-transition: .5s;
 width: 100px;
 height: 100%;
 cursor: pointer;
 z-index: 2;
-float:left;
+float: left;
 margin-bottom: 10px;
-opacity:0;
-
+opacity: 0;
+}
+.nav-scrolled #MainLogo {
+opacity: 1;
 }
