@@ -1,5 +1,5 @@
 function update() {
-root=$("html");
+root=$('html');
 if (root.scrollTop() > 190) {
 root.addClass('nav2');
 } else {

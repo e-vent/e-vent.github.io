@@ -43,6 +43,10 @@ Profile Page:
 - Follow option
 Event planning (webapp itself):
 - Options of places + time
+Text:
+- Not be hard-to-read
+- Sufficiently contrast with background
+- Bring up a highlight to make easier-to-read if applicable
 
 CODE STYLE
 All files must:
@@ -54,6 +58,8 @@ CSS selector line must:
 - Not start with whitespace
 - Have " ", ">", or ", " between names (exactly)
 - Have a space before the brace
+CSS must:
+- Use double quotes ("") instead of ('')
 - Rest only in the folder "/common" or the folder with the same names as the HTML file minus ".html".
 - Not be inline (in the HTML file) unless applied by JQuery
 HTML must:
@@ -63,6 +69,7 @@ HTML must:
 Javascript
 - Use single quotes ('') instead of ("")
 - Run after document.ready instead of immediately
+- Run on-interaction event hooks on load
 - Not be inline
 - Must not apply CSS style directly, but apply CSS classes
 - Use JQuery whenever simpler
@@ -76,4 +83,3 @@ COLOURS
 - 0xA1A5FF
 - 0xBA8FE8
 - 0x92F5BC
-
