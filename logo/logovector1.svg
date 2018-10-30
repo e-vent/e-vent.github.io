@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="fill: #FFF" viewBox="0 0 104.064 48.727">
+<defs>
+<symbol id="e" overflow="visible"><path d="M31.828-1.125V0H5.578v-40h25.75v1.125H6.703v17.86h21.578v1.124H6.703v18.766zm0 0"/></symbol>
+<symbol id="n" overflow="visible"><path d="M6.703-37.813V0H5.578v-40h.844L37.016-1.64V-40h1.125V0h-1.297zm0 0"/></symbol>
+<symbol id="t" overflow="visible"><path d="M32.797-38.875H17.469V0h-1.125v-38.875H1.016V-40h31.78zm0 0"/></symbol>
+</defs>
+<use height="100%" width="100%" href="#e" x="60.176" y="207" transform="matrix(.35278 0 0 .35278 -23.197 -36.303)"/>
+<use height="100%" width="100%" href="#e" x="249.456" y="207.75" transform="matrix(.35278 0 0 .35278 -23.197 -36.303)"/>
+<use height="100%" width="100%" href="#n" x="284.22" y="207.75" transform="matrix(.35278 0 0 .35278 -23.197 -36.303)"/>
+<use height="100%" width="100%" href="#t" x="327.943" y="207.75" transform="matrix(.35278 0 0 .35278 -23.197 -36.303)"/>
+<path d="M48.562 24.51l-2.582-2.583-11.89 11.89-5.165-5.165-2.582 2.583 7.747 7.747zM54.58 4.873h-2.436V0H47.27v4.873H27.78V0h-4.873v4.873h-2.436c-2.693 0-4.848 2.18-4.848 4.872l-.025 34.11a4.87 4.87 0 0 0 4.873 4.872H54.58a4.87 4.87 0 0 0 4.873-4.872V9.745a4.87 4.87 0 0 0-4.873-4.872zm0 38.982H20.47v-26.8h34.11zm0 0" fill="#D9D9D9"/>
+</svg>

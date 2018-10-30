@@ -1,10 +1,12 @@
-$(document).ready(function() {
+function update() {
 root=$("html");
-$(window).scroll(function() {
-if ($(this).scrollTop() > 190) {
+if (root.scrollTop() > 190) {
 root.addClass('nav-scrolled');
 } else {
 root.removeClass('nav-scrolled');
 }
-});
+}
+$(document).ready(function() {
+$(window).scroll(update);
+update()
 });

@@ -66,9 +66,6 @@ transition: all 10s;
 .nav-scrolled #nav-j {
 background-color: #A1A5FF;
 }
-#nav-j:hover {
-opacity: 1;
-}
 #nav-j>span {
 color: #A1A5FF;
 }
@@ -76,15 +73,15 @@ color: #A1A5FF;
 color: white;
 }
 #MainLogo {
-background-image: url("../logo/LogoNodashColor.png");
-width: 100px;
-height: 100%;
-cursor: pointer;
-z-index: 2;
+padding: 1px 0 1px 10px;
 float: left;
-margin-bottom: 10px;
 opacity: 0;
+visibility: hidden;
+}
+#MainLogo>a {
+background-image: url("../logo/logovector3.svg");
 }
 .nav-scrolled #MainLogo {
 opacity: 1;
+visibility: visible;
 }
