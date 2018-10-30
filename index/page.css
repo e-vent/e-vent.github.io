@@ -38,9 +38,14 @@ height: 100vh;
 background: url("Bg2.jpg") fixed;
 }
 #downbutton {
-width: 60px;
 height: 60px;
-cursor: pointer;
+width: 100%;
+display: flex;
 position: absolute;
 bottom: 0;
+}
+#downbutton>a {
+height: 100%;
+width: 60px;
+background-image: url("../common/down-arrow-v2.png");
 }
