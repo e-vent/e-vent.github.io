@@ -8,11 +8,16 @@ width: 100%;
 height: 100%;
 }
 nav span {
-transition: all 5s;
+transition: color .3s ease-out, font-size .3s ease-in-out;
+}
+nav a {
+transition: background-color .3s ease-in-out, opacity .3s ease-in-out;
+}
+nav>li>a>span {
 color: white;
 font-size: 19px;
 }
-html.nav-scrolled nav span {
+html.nav2 nav>li>a>span, nav>li>div>a>span {
 color: black;
 font-size: 17px;
 }
@@ -20,15 +25,12 @@ nav {
 position: fixed;
 list-style-type: none;
 width: 100%;
-box-shadow: none;
-z-index: 2;
-transition: all 10s;
-background-color: transparent;
+z-index: 1;
+transition: height .3s ease-in-out, background-color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-html.nav-scrolled nav {
+html.nav2 nav {
 height: 41px;
 background-color: white;
-color: black;
 box-shadow: -1px 3px 10px 1px rgba(143,141,143,0.6);
 }
 nav>li {
@@ -36,14 +38,15 @@ float: right;
 width: 100px;
 height: 100%;
 }
-nav a :hover {
-background-color: transparent;
-color: #7C7FC1;
+nav>li>a:hover {
+background-color: #ddd5;
+}
+nav>li>a:hover>span {
+color: black;
 }
 nav>li>div {
 display: none;
 position: absolute;
-background-color:lightgray;
 width: 160px;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -51,25 +54,31 @@ nav>li:hover>div {
 display: block;
 }
 nav>li>div>a {
+opacity: 0.8;
+background-color: #ddd;
 padding-left: 16px;
 height: 40px;
 justify-content: left;
 }
 nav>li>div>a:hover {
+background-color: #eee;
+}
+nav>li>div>a:hover, html.nav2 nav>li>div>a {
+opacity: 1;
+}
+nav>li>div>a:hover>span {
 color: #A1A5FF;
-background-color: gray;
 }
-#nav-j {
-background-color: transparent;
-transition: all 10s;
-}
-.nav-scrolled #nav-j {
+html.nav2 #nav-j {
 background-color: #A1A5FF;
+}
+html.nav2 #nav-j:hover {
+background-color: #98A0FF;
 }
 #nav-j>span {
 color: #A1A5FF;
 }
-.nav-scrolled #nav-j>span {
+html.nav2 #nav-j>span {
 color: white;
 }
 #MainLogo {
@@ -78,10 +87,10 @@ float: left;
 opacity: 0;
 visibility: hidden;
 }
-#MainLogo>a {
-background-image: url("../logo/logovector3.svg");
-}
-.nav-scrolled #MainLogo {
+html.nav2 #MainLogo {
 opacity: 1;
 visibility: visible;
+}
+#MainLogo>a {
+background-image: url("../logo/logovector3.svg");
 }

@@ -1,9 +1,9 @@
 function update() {
 root=$("html");
 if (root.scrollTop() > 190) {
-root.addClass('nav-scrolled');
+root.addClass('nav2');
 } else {
-root.removeClass('nav-scrolled');
+root.removeClass('nav2');
 }
 }
 $(document).ready(function() {

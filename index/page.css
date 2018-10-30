@@ -8,16 +8,22 @@ display: flex;
 flex-direction: column;
 }
 #logo {
-background-image: url("../logo/logovector1.svg");
 height: 210px;
 width: 100%;
+display: flex;
 }
-.nav-scrolled #logo {
+.nav2 #logo {
 opacity: 0;
 visibility: hidden;
 }
-#logo:hover {
-transform: scale(1.05);
+#logo>a {
+width: 294px;
+height: 138px;
+transition: transform 1s ease-in-out;
+background-image: url("../logo/logovector1.svg");
+}
+#logo>a:hover {
+transform: scale(1.1);
 }
 #s2 {
 background-color: #7C7FC1;
