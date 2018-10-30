@@ -1,9 +1,8 @@
 @charset "UTF-8";
 #hero {
-background-size: cover;
 height: 100vh;
 margin: 0;
-background: url("Bg1.jpg") no-repeat fixed center;
+background: url("Bg1.jpg") no-repeat fixed center/cover;
 display: flex;
 flex-direction: column;
 }
@@ -17,8 +16,8 @@ opacity: 0;
 visibility: hidden;
 }
 #logo>a {
-width: 294px;
-height: 138px;
+width: 343px;
+height: 181px;
 transition: transform 1s ease-in-out;
 background-image: url("../logo/logovector1.svg");
 }
@@ -26,16 +25,14 @@ background-image: url("../logo/logovector1.svg");
 transform: scale(1.1);
 }
 #s2 {
-background-color: #7C7FC1;
-background-size: cover;
+background: #7C7FC1;
 }
 #s3 {
-background-color: #7C7FC1;
-background-size: cover;
+background: #7C7FC1;
 }
 #bg2 {
 height: 100vh;
-background: url("Bg2.jpg") fixed;
+background: url("Bg2.jpg") no-repeat fixed center/cover;
 }
 #downbutton {
 height: 60px;
