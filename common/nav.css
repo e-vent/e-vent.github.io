@@ -38,6 +38,11 @@ float: right;
 width: 100px;
 height: 100%;
 }
+@media (min-width: 840px) {
+nav>li {
+width: 110px;
+}
+}
 nav>li>a:hover {
 background-color: #ddd5;
 }
