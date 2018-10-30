@@ -1,12 +1,9 @@
 @charset "UTF-8";
 #hero {
-background-image: url("Bg1.jpg");
 background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
 height: 100vh;
 margin: 0;
-background-attachment:fixed;
+background: url("Bg1.jpg") no-repeat fixed center;
 display: flex;
 flex-direction: column;
 }
@@ -14,17 +11,18 @@ flex-direction: column;
 margin-top: 180px;
 text-align: center;
 }
-.logo {
+#logo {
 background-image: url("../logo/LogoNodash.png");
-transition: all .2s ease-in-out;
-border: 1px solid #;
 width: 240px;
 height: 210px;
 border-radius: 4px;
 cursor: pointer;
 z-index: 1;
 }
-.logo:hover {
+.nav-scrolled #logo {
+opacity: 0;
+}
+#logo:hover {
 transform: scale(1.3);
 }
 #s2 {
@@ -40,10 +38,9 @@ height: 100vh;
 margin: 0;
 }
 #bg2 {
-background-image: url("Bg2.jpg");
 height: 100vh;
 margin: 0;
-background-attachment: fixed;
+background: url("Bg2.jpg") fixed;
 }
 #downbutton {
 z-index: 1;

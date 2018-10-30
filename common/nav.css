@@ -1,6 +1,6 @@
 @charset "UTF-8";
 nav, .navsize {
-height: 41px;
+height: 56px;
 }
 nav a {
 display: flex;
@@ -8,31 +8,44 @@ width: 100%;
 height: 100%;
 }
 nav span {
+transition: all 5s;
+color: white;
+font-size: 19px;
+}
+html.nav-scrolled nav span {
 color: black;
+font-size: 17px;
 }
 nav {
 position: fixed;
 list-style-type: none;
-background-color: #F7F7F7;
-border-bottom:1px solid lightgray;
 width: 100%;
-box-shadow: -1px 3px 10px 1px rgba(143,141,143,0.6);
+box-shadow: none;
 z-index: 2;
+transition: all 10s;
+background-color: transparent;
+}
+html.nav-scrolled nav {
+height: 41px;
+background-color: white;
+color: black;
+box-shadow: -1px 3px 10px 1px rgba(143,141,143,0.6);
 }
 nav>li {
 float: right;
 width: 100px;
 height: 100%;
 }
-nav>li:hover>a {
-background-color: lightgray;
+nav a :hover {
+background-color: transparent;
+color: #7C7FC1;
 }
 nav>li>div {
 display: none;
 position: absolute;
-background-color: #F9F9F9;
+background-color:lightgray;
 width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 nav>li:hover>div {
 display: block;
@@ -43,26 +56,35 @@ height: 40px;
 justify-content: left;
 }
 nav>li>div>a:hover {
-background-color: #F1F1F1
+color: #A1A5FF;
+background-color: gray;
 }
 #nav-j {
-opacity: 0.6;
+background-color: transparent;
+transition: all 10s;
+}
+.nav-scrolled #nav-j {
 background-color: #A1A5FF;
-transition: 0.3;
 }
 #nav-j:hover {
 opacity: 1;
 }
 #nav-j>span {
+color: #A1A5FF;
+}
+.nav-scrolled #nav-j>span {
 color: white;
 }
-.MainLogo {
+#MainLogo {
 background-image: url("../logo/LogoNodashColor.png");
-transition: .5s;
 width: 100px;
 height: 100%;
 cursor: pointer;
 z-index: 2;
-float:left;
+float: left;
 margin-bottom: 10px;
+opacity: 0;
+}
+.nav-scrolled #MainLogo {
+opacity: 1;
 }

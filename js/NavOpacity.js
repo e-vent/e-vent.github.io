@@ -1,9 +1,10 @@
 $(document).ready(function() {
+root=$("html");
 $(window).scroll(function() {
-if ($(this).scrollTop() > 0) {
-$('header').css('opacity', 0.8);
+if ($(this).scrollTop() > 190) {
+root.addClass('nav-scrolled');
 } else {
-$('header').css('opacity', 1);
+root.removeClass('nav-scrolled');
 }
 });
 });
