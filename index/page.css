@@ -16,8 +16,8 @@ opacity: 0;
 visibility: hidden;
 }
 #logo>a {
-width: 343px;
-height: 181px;
+width: 285px;
+height: 150px;
 transition: transform 1s ease-in-out;
 background-image: url("../logo/logovector1.svg");
 }
