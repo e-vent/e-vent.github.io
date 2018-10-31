@@ -6,7 +6,7 @@ root.addClass('nav2');
 root.removeClass('nav2');
 }
 }
-$(document).ready(function() {
+$(function() {
 $(window).scroll(update);
 update()
 });
