@@ -15,6 +15,6 @@ preload(
     "logo/logovector1.svg",
     "logo/logovector2.svg",
     "logo/logovector3.svg",
-    "common/down-arrow-v2.png"
+    "common/down-arrow-v2.png",
 )
 //--><!]]>
