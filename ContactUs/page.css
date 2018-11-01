@@ -1,15 +1,12 @@
 @charset "UTF-8";
 .h {
 text-align: center;
-line-height: 165px;
 }
 .t {
-font-size: 75px;
+font-size: 10vmin;
 }
 .i {
 display: flex;
-top: 225px;
-left: 15px;
 }
 main {
 height: 100%;
@@ -22,8 +19,8 @@ padding-left: 2px;
 padding-right: 2px;
 }
 .i>a>div {
-height: 150px;
-width: 150px;
+height: 25vmin;
+width: 25vmin;
 }
 #ytbtn>div {
 background-image: url("youtube.png")
