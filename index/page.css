@@ -5,6 +5,7 @@ margin: 0;
 background: url("Bg1.jpg") no-repeat fixed center/cover;
 display: flex;
 flex-direction: column;
+transition: ;
 }
 #logo {
 height: 210px;
@@ -34,12 +35,20 @@ background: #7C7FC1;
 height: 100vh;
 background: url("Bg2.jpg") no-repeat fixed center/cover;
 }
+#bg3 {
+height: 100vh;
+background: url("Bg3.jpg") no-repeat fixed center/cover;
+}
 #downbutton {
 height: 60px;
 width: 100%;
 display: flex;
 position: absolute;
 bottom: 0;
+}
+#Footer{
+height: 30vh;
+background: #7C7FC1;
 }
 #downbutton>a {
 height: 100%;
