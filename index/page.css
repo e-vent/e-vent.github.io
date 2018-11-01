@@ -22,7 +22,7 @@ transition: transform 1s ease-in-out;
 background-image: url("../logo/logovector1.svg");
 }
 #logo>a:hover {
-transform: scale(1.1);
+transform: scale(1.08);
 }
 #s2 {
 background: #7C7FC1;
