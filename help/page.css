@@ -1,1 +1,16 @@
 @charset "UTF-8";
+.h {
+text-align: center;
+padding-bottom: 80px;
+}
+.t {
+font-size: 10vmin;
+}
+.FAQ {
+text-align: left;	
+}
+main {
+padding-top: 100px;
+display: flex;
+flex-direction: column;	
+}
