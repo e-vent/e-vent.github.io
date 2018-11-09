@@ -4,13 +4,13 @@ text-align: center;
 padding-bottom: 80px;
 }
 .t {
-font-size: 10vmin;
+font-size: 60pt;
 }
 .FAQ {
-text-align: left;	
+display: flex;
+flex-direction: column;
+justify-content: space-around;	
 }
 main {
 padding-top: 100px;
-display: flex;
-flex-direction: column;	
 }
