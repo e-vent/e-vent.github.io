@@ -5,6 +5,9 @@ margin: 0;
 background: url("Bg1.jpg") no-repeat fixed center/cover;
 display: flex;
 flex-direction: column;
+transition: background-image 1s ease-in-out;
+transform: translate3d(0,0,0);
+-webkit-transform: translate3d(0,0,0);
 }
 #logo {
 height: 210px;
@@ -16,13 +19,13 @@ opacity: 0;
 visibility: hidden;
 }
 #logo>a {
-width: 343px;
-height: 181px;
+width: 285px;
+height: 150px;
 transition: transform 1s ease-in-out;
 background-image: url("../logo/logovector1.svg");
 }
 #logo>a:hover {
-transform: scale(1.1);
+transform: scale(1.08);
 }
 #s2 {
 background: #7C7FC1;
@@ -33,15 +36,27 @@ background: #7C7FC1;
 #bg2 {
 height: 100vh;
 background: url("Bg2.jpg") no-repeat fixed center/cover;
+transform: translate3d(0,0,0);
+-webkit-transform: translate3d(0,0,0);
 }
-#downbutton {
+#bg3 {
+height: 100vh;
+background: url("Bg3.jpg") no-repeat fixed center/cover;
+transform: translate3d(0,0,0);
+-webkit-transform: translate3d(0,0,0);
+}
+.downbutton {
 height: 60px;
 width: 100%;
 display: flex;
 position: absolute;
 bottom: 0;
 }
-#downbutton>a {
+footer {
+height: 200px;
+background: #7C7FC1;
+}
+.downbutton>a {
 height: 100%;
 width: 60px;
 background-image: url("../common/down-arrow-v2.png");

@@ -45,9 +45,11 @@ width: 110px;
 }
 nav>li>a:hover {
 background-color: #ddd5;
+transition:  0.5s ease-in-out;
 }
 nav>li>a:hover>span {
 color: black;
+transition:  0.5s ease-in-out;
 }
 nav>li>div {
 display: none;
@@ -57,6 +59,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 nav>li:hover>div {
 display: block;
+transition:  0.5s ease-in-out;
 }
 nav>li>div>a {
 opacity: 0.8;
