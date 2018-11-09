@@ -7,9 +7,7 @@ padding-bottom: 80px;
 font-size: 60pt;
 }
 .FAQ {
-display: flex;
-flex-direction: column;
-justify-content: space-around;	
+width: 100%;
 }
 main {
 padding-top: 100px;
