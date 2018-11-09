@@ -51,6 +51,5 @@ background: #7C7FC1;
 .downbutton>a {
 height: 100%;
 width: 60px;
-background-image: url("down-arrow-v2.png");
+background-image: url("down-arrow.png");
 }
-
