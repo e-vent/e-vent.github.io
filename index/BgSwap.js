@@ -1,7 +1,3 @@
-$(window).ready(function() { 
-    var hero = document.getElementById("hero");
-    $(hero).hide().fadeIn(2000);
-});  
 var i = 0;
 setInterval(function() {
     var hero = document.getElementById("hero");
