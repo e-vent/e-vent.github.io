@@ -8,7 +8,6 @@ display: flex;
 flex-direction: column;
 }
 #logo {
-height: 210px;
 width: 100%;
 display: flex;
 }
@@ -40,20 +39,4 @@ background: #7C7FC1;
 background: url("Bg3.jpg") no-repeat fixed center/cover;
 transform: translate3d(0,0,0);
 -webkit-transform: translate3d(0,0,0);
-}
-.downbutton {
-height: 60px;
-width: 100%;
-display: flex;
-position: absolute;
-bottom: 0;
-}
-footer {
-height: 200px;
-background: #7C7FC1;
-}
-.downbutton>a {
-height: 100%;
-width: 60px;
-background-image: url("../common/down-arrow-v2.png");
 }

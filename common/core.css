@@ -27,6 +27,7 @@ padding-top: 56px;
 main>section {
 height: calc(100vh - 40px);
 position: relative;
+padding-bottom: 60px;
 }
 main.nav3>section:first-of-type {
 height: calc(100vh - 56px);
@@ -36,3 +37,20 @@ position: relative;
 top: -40px;
 display: block;
 }
+.downbutton {
+height: 60px;
+width: 100%;
+display: flex;
+position: absolute;
+bottom: 0;
+}
+footer {
+height: 200px;
+background: #7C7FC1;
+}
+.downbutton>a {
+height: 100%;
+width: 60px;
+background-image: url("down-arrow-v2.png");
+}
+
