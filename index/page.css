@@ -1,16 +1,13 @@
 @charset "UTF-8";
-#hero {
-height: 100vh;
-margin: 0;
+main {
 background: url("Bg1.jpg") no-repeat fixed center/cover;
+transition: background-image 1s ease-in-out;
+}
+#s1 {
 display: flex;
 flex-direction: column;
-transition: background-image 1s ease-in-out;
-transform: translate3d(0,0,0);
--webkit-transform: translate3d(0,0,0);
 }
 #logo {
-height: 210px;
 width: 100%;
 display: flex;
 }
@@ -31,33 +28,15 @@ transform: scale(1.08);
 background: #7C7FC1;
 }
 #s3 {
-background: #7C7FC1;
-}
-#bg2 {
-height: 100vh;
 background: url("Bg2.jpg") no-repeat fixed center/cover;
 transform: translate3d(0,0,0);
 -webkit-transform: translate3d(0,0,0);
 }
-#bg3 {
-height: 100vh;
+#s4 {
+background: #7C7FC1;
+}
+#s5 {
 background: url("Bg3.jpg") no-repeat fixed center/cover;
 transform: translate3d(0,0,0);
 -webkit-transform: translate3d(0,0,0);
-}
-.downbutton {
-height: 60px;
-width: 100%;
-display: flex;
-position: absolute;
-bottom: 0;
-}
-footer {
-height: 200px;
-background: #7C7FC1;
-}
-.downbutton>a {
-height: 100%;
-width: 60px;
-background-image: url("../common/down-arrow-v2.png");
 }

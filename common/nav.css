@@ -1,5 +1,5 @@
 @charset "UTF-8";
-nav, .navsize {
+nav {
 height: 56px;
 }
 nav a {
@@ -23,13 +23,14 @@ font-size: 17px;
 }
 nav {
 position: fixed;
+top: 0;
 list-style-type: none;
 width: 100%;
 z-index: 1;
 transition: height .3s ease-in-out, background-color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 html.nav2 nav {
-height: 41px;
+height: 40px;
 background-color: white;
 box-shadow: -1px 3px 10px 1px rgba(143,141,143,0.6);
 }
