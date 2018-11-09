@@ -1,13 +1,11 @@
 @charset "UTF-8";
-#hero {
-height: 100vh;
-margin: 0;
+main {
 background: url("Bg1.jpg") no-repeat fixed center/cover;
+transition: background-image 1s ease-in-out;
+}
+#s1 {
 display: flex;
 flex-direction: column;
-transition: background-image 1s ease-in-out;
-transform: translate3d(0,0,0);
--webkit-transform: translate3d(0,0,0);
 }
 #logo {
 height: 210px;
@@ -31,16 +29,14 @@ transform: scale(1.08);
 background: #7C7FC1;
 }
 #s3 {
-background: #7C7FC1;
-}
-#bg2 {
-height: 100vh;
 background: url("Bg2.jpg") no-repeat fixed center/cover;
 transform: translate3d(0,0,0);
 -webkit-transform: translate3d(0,0,0);
 }
-#bg3 {
-height: 100vh;
+#s4 {
+background: #7C7FC1;
+}
+#s5 {
 background: url("Bg3.jpg") no-repeat fixed center/cover;
 transform: translate3d(0,0,0);
 -webkit-transform: translate3d(0,0,0);

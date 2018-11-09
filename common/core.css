@@ -18,8 +18,21 @@ height: 100%;
 .logo {
 transition: width .5s ease-out, height .5s ease-out, opacity .5s ease-out, visibility .5s;
 }
-section {
-margin: 0;
-height: 100vh;
+main {
+padding-top: 40px;
+}
+main.nav3 {
+padding-top: 56px;
+}
+main>section {
+height: calc(100vh - 40px);
 position: relative;
+}
+main.nav3>section:first-of-type {
+height: calc(100vh - 56px);
+}
+.dest {
+position: relative;
+top: -40px;
+display: block;
 }
