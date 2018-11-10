@@ -40,3 +40,84 @@ background: url("Bg3.jpg") no-repeat fixed center/cover;
 transform: translate3d(0,0,0);
 -webkit-transform: translate3d(0,0,0);
 }
+.row {
+position: relative;
+align-items: stretch;
+top: 50px;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+}
+#column1{
+text-align: center;
+border-radius: 8px;
+width:20%;
+padding: 10px;
+height: auto;
+opacity:0.7;
+background-color:#7C7FC1;
+cursor:pointer;
+transition: all .35s ease-in-out;
+overflow:hidden;
+}
+#column2{
+text-align: center;
+border-radius: 8px;
+width:20%;
+padding: 10px;
+height: auto;
+opacity:0.7;
+background-color:#7C7FC1;
+cursor:pointer;
+transition: all .35s ease-in-out;
+overflow:hidden;
+}
+#column3{
+text-align: center;
+border-radius: 8px;
+width:20%;
+padding: 10px;
+height: auto;
+opacity:0.7;
+background-color:#7C7FC1;
+cursor:pointer;
+transition: all .35s ease-in-out;
+overflow:hidden;
+}
+#column4{
+text-align: center;
+border-radius: 8px;
+width:20%;
+padding: 10px;
+height: auto;
+opacity:0.7;
+background-color:#7C7FC1;
+cursor:pointer;
+transition: all .35s ease-in-out;
+overflow:hidden;
+}
+#column1:hover {
+opacity:1;
+transform: scale(1.08);
+}
+#column2:hover {
+opacity:1;
+transform: scale(1.08);
+}
+#column3:hover {
+opacity:1;
+transform: scale(1.08);
+}
+#column4:hover {
+opacity:1;
+transform: scale(1.08);
+}
+.icon{
+height: 100px;
+width: 100%;
+display: flex;
+position: relative;
+top: 20px;
+}
+
+
