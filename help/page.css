@@ -4,7 +4,7 @@ text-align: center;
 padding-bottom: 80px;
 }
 .t {
-font-size: 60pt;
+font-size: 13vmin;
 }
 .FAQ {
 width: 100%;
@@ -12,3 +12,23 @@ width: 100%;
 main {
 padding-top: 100px;
 }
+.FAQtitle {
+padding-top: 30px;	
+padding-bottom: 75px;
+padding-left: 20px;
+font-size: 8vmin;
+}	
+.q {
+background: #7C7FC1;
+padding-bottom: 20px;
+padding-top: 20px;
+padding-left: 20px;
+color: white;
+font-size: 3vmin;	
+}	
+.ans {
+padding-top: 10px;
+padding-bottom: 75px;
+padding-left: 20px;	
+font-size: 2vmin;
+}	
