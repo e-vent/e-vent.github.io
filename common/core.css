@@ -53,8 +53,10 @@ height: 100%;
 width: 60px;
 background-image: url("down-arrow.png");
 }
-i.icon {
-font-style: normal;
+div.icon {
+text-align: center;
 font-size: 40px;
+/*noinspection CssNoGenericFontName*/
+font-family: "Noto Color Emoji"
 }
 
