@@ -1,7 +1,6 @@
 @charset "UTF-8";
 main {
-background: url("Bg1.jpg") no-repeat fixed center/cover;
-transition: background-image 1s ease-in-out;
+background-image: url("Bg1.jpg");
 }
 h2 {
 text-align: center;
@@ -14,7 +13,7 @@ flex-direction: column;
 width: 100%;
 display: flex;
 }
-.nav2 #logo {
+html.nav2 #logo {
 opacity: 0;
 visibility: hidden;
 }
@@ -38,15 +37,11 @@ justify-content: space-around;
 width: calc(100vw / 4)
 }
 #s3 {
-background: url("Bg2.jpg") no-repeat fixed center/cover;
-transform: translate3d(0,0,0);
--webkit-transform: translate3d(0,0,0);
+background-image: url("Bg2.jpg");
 }
 #s4 {
-background: #7C7FC1;
+background-color: #7C7FC1;
 }
 #s5 {
-background: url("Bg3.jpg") no-repeat fixed center/cover;
-transform: translate3d(0,0,0);
--webkit-transform: translate3d(0,0,0);
+background-image: url("Bg3.jpg");
 }

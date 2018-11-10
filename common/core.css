@@ -11,6 +11,15 @@ background-position: center;
 margin: 0;
 flex-wrap: wrap;
 }
+.img, .parallax {
+background-size: cover;
+}
+.parallax {
+background-attachment: fixed;
+transition: background-image 1s ease-in-out;
+transform: translate3d(0,0,0);
+-webkit-transform: translate3d(0,0,0);
+}
 body, html {
 scroll-behavior: smooth;
 height: 100%;
