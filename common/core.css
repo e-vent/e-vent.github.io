@@ -53,3 +53,8 @@ height: 100%;
 width: 60px;
 background-image: url("down-arrow.png");
 }
+i.icon {
+font-style: normal;
+font-size: 40px;
+}
+
