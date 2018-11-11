@@ -11,7 +11,7 @@ background-position: center;
 margin: 0;
 flex-wrap: wrap;
 }
-.img, .parallax {
+.evt-bg, .parallax {
 background-size: cover;
 }
 .parallax {
@@ -68,4 +68,31 @@ font-size: 40px;
 /*noinspection CssNoGenericFontName*/
 font-family: "Noto Color Emoji"
 }
+.evt-bg {
+height: 200px;
+position: relative;
+}
+.evt-bg>h2 {
+position: absolute;
+left: 20px;
+bottom: 20px;
+}
+.evt-desc {
+padding: 20px;
+text-overflow: ellipsis;
+}
+.evt {
+background-color: #F00;
+width: 500px;
+display: inline-block;
+margin-right: 20px;
+}
+.events {
+padding: 20px;
+white-space: nowrap;
+width: 100%;
+overflow-x: auto;
+overflow-y: hidden;
+}
+
 
