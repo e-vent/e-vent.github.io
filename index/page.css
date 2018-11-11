@@ -26,14 +26,14 @@ transform: scale(1.08);
 #s2 {
 background: #7C7FC1;
 }
-#s2content {
+#s2content, #s4content {
 display: flex;
 justify-content: space-around;
 }
-#s2content>div {
+#s2content>div, #s4content>div {
 width: calc(100vw / 4)
 }
-#s2content>div>h2 {
+#s2content>div>h2, #s4content>div>h2 {
 text-align: center;
 }
 #s3 {
