@@ -5,7 +5,7 @@ function listToRadioForm(l) {
     for (i = 0; i < l.length; i++) {
         text += "<input type='radio' name='time' value="+l[i]+">"+l[i]+"<br>";
     }
-    text += "<button type='submit' onclick='replace();'>Add event to calendar</button></form>";
+    text += "<button class='button' type='submit' onclick='replace();'>Add event to calendar</button></form>";
     return text;
 }
 
@@ -17,7 +17,7 @@ function replace2() {
 }
 
 function replace() {
-	document.getElementById('schedular').innerHTML='Your event has been scheduled between 10-11-2018 13:00 and 10-11-2018 13:00';
+	document.getElementById('schedular').innerHTML='Your event has been added to your calendar';
 	setTimeout(refresh, 3000);
 }
 
