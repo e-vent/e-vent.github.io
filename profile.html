@@ -1,93 +1,105 @@
 <!DOCTYPE html>
 <html lang="en" class="nav2">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="common/core.css" />
-<link rel="stylesheet" href="common/nav.css" />
-<link rel="stylesheet" href="profile/page.css" />
-<meta name="google-signin-scope" content="profile email">
-<meta name="google-signin-client_id" content="365679910149-388t7l2qc3kflnj52f01mk4bku5ffiis.apps.googleusercontent.com">
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<title>E-vent</title>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="365679910149-388t7l2qc3kflnj52f01mk4bku5ffiis.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="profile/page.js" async defer></script>
+    <link rel="stylesheet" href="common/core.css" />
+    <link rel="stylesheet" href="common/nav.css" />
+    <link rel="stylesheet" href="profile/page.css" />
+    <title>E-vent</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
-<!--DO NOT EDIT ANYTHING BEFORE <main> (outside template.html) A COMPUTER WILL DELETE YOUR CHANGES!!!-->
 <body>
-<header>
-<!--logo here-->
-<nav id="topnav">
-<li id="MainLogo" class="logo"><a href="index.html#"></a></li>
-<li><a id="nav-j" href="signin.html#"><span>Join</span></a></li>
-<!--<li><a id="nav-h" href="help.html#"><span>Help</span></a></li>-->
-<li><a id="nav-c" href="ContactUs.html#"><span>Contact us</span></a></li>
-<li><a id="nav-a" href="AboutUs.html#"><span>About us</span></a></li>
-<li>
-<a id="nav-w" href="index.html#"><span>Welcome</span></a>
-<div>
-<a href="index.html#section2"><span>Product</span></a>
-<a href="index.html#section3"><span>Features</span></a>
-<a href="index.html#section4"><span>Events</span></a>
-<a href="index.html#section5"><span>Testimonials</span></a>
-</div>
-</li>
-</nav>
-</header>
+    <header>
+    <!--logo here-->
+        <nav>
+            <li><a id="nav-j" href="join.html"><span>Join</span></a></li>
+            <!--<li><a id="nav-h" href="help.html#"><span>Help</span></a></li>-->
+            <li><a id="nav-c" href="ContactUs.html#"><span>Contact us</span></a></li>
+            <li><a id="nav-a" href="AboutUs.html#"><span>About us</span></a></li>
+            <li>
+            <a id="nav-w" href="index.html#"><span>Welcome</span></a>
+            <div>
+            <a href="index.html#"><span>Product</span></a>
+            <a href="index.html#"><span>Features</span></a>
+            <a href="index.html#"><span>Events</span></a>
+            <a href="index.html#"><span>Testimonials</span></a>
+            </div>
+            </li>
+    </nav>
+    </header>
 <main><!--buildscriptdivider$header-content--><!-- your content goes here-->
-<section id="info">
-<div id="picture">
-</div>
-<div id="name">
-</div>
-<div id="gsignun">
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
-<script>
-function onSignIn(googleUser) {
-console.log('loaded');
-var profile = googleUser.getBasicProfile();
-document.getElementById('picture').innerHTML =  "<img id='profilePicture' src='" + profile.getImageUrl() + "'/><br>";
-document.getElementById('name').innerHTML = profile.getName() + "<br>";
-console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-console.log('Full Name: ' + profile.getName());
-console.log('Given Name: ' + profile.getGivenName());
-console.log('Family Name: ' + profile.getFamilyName());
-console.log("Image URL: " + profile.getImageUrl());
-console.log("Email: " + profile.getEmail());
-}
-</script>
-<a href="#" onclick = "signOut();">Sign out</a>
-<script>
-function signOut(){
-var auth2 = gapi.auth2.getAuthInstance();
-auth2.signOut().then(function() {
-document.getElementById('picture').innerHTML='';
-document.getElementById('name').innerHTML='';
-document.location.href="index.html";
-});
-}
-</script>
-</div>
-</section>
-<section class="row">
-<section id="friends">
-your friends :
-</section>
-<section id="create_event">
-<div id="create">
-choose date...
-</div>
-<div id="event">
-possible
-</div>
-</section>
-<section id="events">
-your recommanded events:
-</section>
-</section>
-<!--buildscriptdivider$content-footer--></main>
-<!--DO NOT EDIT ANYTHING AFTER </main> (outside template.html) A COMPUTER WILL DELETE YOUR CHANGES!!!-->
-<footer>
-<!--company info goes here-->
-</footer>
+
+    <section id="info">
+        <div id="picture">
+        </div>
+        <div id="name">
+        </div>
+        <div id="gsignun">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <a href="#" onclick = "signOut();">Sign out</a>
+        </div>
+    </section>
+
+    <section class="row">
+        <section id="friends">
+            <h2>Friends</h2>
+            <form>
+                <input type="checkbox" name="friend[]" value="friend1"> Amayas<br>
+                <input type="checkbox" name="friend[]" value="friend2"> Daniel<br>
+                <input type="checkbox" name="friend[]" value="friend3"> Jean<br>
+                <input type="checkbox" name="friend[]" value="friend4"> Marla<br>
+            </form>
+        </section>
+
+        <section id="create_event">
+            <h2>Schedule an event</h2>
+            <div id="schedular">
+                <form>
+                    <div>
+                    Start:
+                    <input id="sdate" type="date" name="sdate">
+                    </div>
+                    <div>
+                    End:
+                    <input id="edate" type="date" name="edate" onclick="datelimit();">
+                    </div>
+                    <div>
+                    Min time:
+                    <input id="mintime" type="time" name="mintime">
+                    </div>
+                    <div>
+                    Max time:
+                    <input id="maxtime" type="time" name="maxtime" onclick="timelimit();">
+                    </div>
+                    <div>
+                    Event length:
+                    <input type="text" name="hours">
+                    </div>
+                    <div>
+                    <button type="submit" onclick="replace3();">Check availability</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Recommanded events</h2>
+        </section>
+    </section>
+
+
+
+
+
+
+        <!--buildscriptdivider$content-footer--></main>
+    <footer>
+    <!--company info goes here-->
+    </footer>
 </body>
 </html>

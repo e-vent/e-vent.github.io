@@ -62,9 +62,33 @@ height : 100%;
 border: 3px solid #5271FF;
 border-radius: 20px;
 margin: 5px;
+font-size: 18px;
 }
 @media screen and (max-width: 700px) {
 .row {
 flex-direction: column;
 }
+}
+input[type=button],input[type=date],input[type=time],input[type=text], input[type=submit], input[type=reset] {
+    background-color: white;
+    border-width: medium;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+form {
+//background-color: #A1A5FF;
+padding: 20px;
+border-radius: 20px;
+margin: 5px;
+}
+
+form>div {
+    float:left;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
 }
