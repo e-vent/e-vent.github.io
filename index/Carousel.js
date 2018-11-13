@@ -35,7 +35,7 @@ const cloned = template.cloneNode(true);
 cloned.querySelector("h2").textContent = parsed.name;
 cloned.querySelector(".evt-desc").textContent = parsed.desc;
 eventRoot.prepend(cloned);
-setTimeout(doupdate, 1000)
+setTimeout(doupdate, 500)
 }, function() {
 setTimeout(doupdate, 2000)
 })
