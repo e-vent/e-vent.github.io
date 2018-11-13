@@ -1,6 +1,6 @@
 const eventRoot = $('#newevents')[0];
 const template = $('#evt-template')[0].content.querySelector(".evt");
-const baseURL = 'http://127.0.0.1:8000';
+const baseURL = 'http://76.66.99.88';
 function openXHR(endpoint, goodCb, badCb) {
 const xhr = new XMLHttpRequest();
 xhr.open('GET', baseURL + endpoint);
