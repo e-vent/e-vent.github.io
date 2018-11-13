@@ -34,7 +34,7 @@ main.nav3 {
 padding-top: 56px;
 }
 main>section {
-height: calc(100vh - 40px);
+min-height: calc(100vh - 40px);
 position: relative;
 padding-bottom: 60px;
 }
