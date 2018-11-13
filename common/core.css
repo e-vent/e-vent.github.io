@@ -103,5 +103,20 @@ width: 100%;
 overflow-x: auto;
 overflow-y: hidden;
 }
-
+.appdownload>div {
+text-decoration: none;
+color: black;
+float: right;
+height: 56px;
+width: 160px;
+transition: background-color .3s ease-in-out;
+background-color: #A1A5FF;
+display: flex;
+}
+.appdownload:hover>div {
+background-color: #98A0FF;
+}
+.appdownload:visited, .appdownload:hover, .appdownload:focus, .appdownload:active {
+color:black
+}
 
