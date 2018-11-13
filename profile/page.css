@@ -9,6 +9,9 @@ display: flex;
 flex-wrap: wrap;
 height : 100%
 }
+main>section {
+min-height: 20%;
+}
 #name {
 flex: 30%;
 padding: 20px;
