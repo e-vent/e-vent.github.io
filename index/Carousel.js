@@ -25,6 +25,10 @@ openXHR('/count', function(text) {
 console.log('Count response ' + text);
 const count = parseInt(text);
 console.log('Have ' + count + ' events');
+if (count > nextEventID + 10) {
+console.log('Skipping old events to keep up with feed')
+nextEventID = count - 5
+}
 if (nextEventID < count) {
 console.log('Will fetch: ' + nextEventID);
 openXHR('/events/' + nextEventID, function(text) {
