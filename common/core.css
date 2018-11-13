@@ -83,7 +83,7 @@ white-space: normal;
 text-overflow: ellipsis;
 }
 .evt {
-background-color: #F00;
+background-color: #7C7FC1;
 width: 500px;
 display: inline-block;
 margin-right: 20px;
@@ -102,6 +102,7 @@ white-space: nowrap;
 width: 100%;
 overflow-x: auto;
 overflow-y: hidden;
+scrollbar-3dlight-color:gold;
 }
 .appdownload>div {
 text-decoration: none;
@@ -118,5 +119,21 @@ background-color: #98A0FF;
 }
 .appdownload:visited, .appdownload:hover, .appdownload:focus, .appdownload:active {
 color:black
+}
+::-webkit-scrollbar {
+width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
 }
 

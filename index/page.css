@@ -45,3 +45,11 @@ background-color: #7C7FC1;
 #s5 {
 background-image: url("Bg3.jpg");
 }
+#Slogan {
+text-decoration: none;
+font-size: 30px;
+color: black;
+-webkit-text-fill-color: white;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+}
