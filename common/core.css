@@ -79,6 +79,7 @@ bottom: 20px;
 }
 .evt-desc {
 padding: 20px;
+white-space: normal;
 text-overflow: ellipsis;
 }
 .evt {
