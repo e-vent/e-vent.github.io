@@ -11,6 +11,15 @@ background-position: center;
 margin: 0;
 flex-wrap: wrap;
 }
+.evt-bg, .parallax {
+background-size: cover;
+}
+.parallax {
+background-attachment: fixed;
+transition: background-image 1s ease-in-out;
+transform: translate3d(0,0,0);
+-webkit-transform: translate3d(0,0,0);
+}
 body, html {
 scroll-behavior: smooth;
 height: 100%;
@@ -25,7 +34,7 @@ main.nav3 {
 padding-top: 56px;
 }
 main>section {
-height: calc(100vh - 40px);
+min-height: calc(100vh - 40px);
 position: relative;
 padding-bottom: 60px;
 }
@@ -53,3 +62,46 @@ height: 100%;
 width: 60px;
 background-image: url("down-arrow.png");
 }
+div.icon {
+text-align: center;
+font-size: 40px;
+/*noinspection CssNoGenericFontName*/
+font-family: "Noto Color Emoji"
+}
+.evt-bg {
+height: 200px;
+position: relative;
+}
+.evt-bg>h2 {
+position: absolute;
+left: 20px;
+bottom: 20px;
+}
+.evt-desc {
+padding: 20px;
+white-space: normal;
+text-overflow: ellipsis;
+}
+.evt {
+background-color: #F00;
+width: 500px;
+display: inline-block;
+margin-right: 20px;
+opacity: 0.8;
+transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+text-decoration: none;
+color: black;
+}
+.evt:hover {
+opacity: 1;
+transform: scale(1.05);
+}
+.events {
+padding: 20px;
+white-space: nowrap;
+width: 100%;
+overflow-x: auto;
+overflow-y: hidden;
+}
+
+
