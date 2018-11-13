@@ -10,14 +10,14 @@ function listToRadioForm(l) {
 }
 
 function replace2() {
-    var free = ["de 10-11-2018 13:00 à de 10-11-2018 13:00", "de 10-11-2018 13:00 à de 10-11-2018 16:00", "de 11-11-2018 10:00 à de 11-11-2018 13:00"];
+    var free = ["From 14-11-2018 14:00 to 14-11-2018 17:00", "From 14-11-2018 15:00 to 14-11-2018 18:00", "From 14-11-2018 16:00 to 14-11-2018 19:00"];
     var text;
     text=listToRadioForm(free);
 	document.getElementById("schedular").innerHTML=text;
 }
 
 function replace() {
-	document.getElementById('schedular').innerHTML='Your event has been added to your calendar';
+	document.getElementById('schedular').innerHTML='A new event has been added to your calendars.';
 	setTimeout(refresh, 3000);
 }
 
