@@ -3,7 +3,7 @@
 text-align: center;
 }
 .t {
-font-size: 10vmin;
+font-size: 13vmin;
 }
 .i {
 display: flex;
@@ -39,4 +39,7 @@ background-image: url("snapchat.png")
 }
 #fbbtn>div {
 background-image: url("facebook.png")
+}
+main {
+background: url("telecom-technology.jpg") no-repeat fixed center/cover;
 }
