@@ -34,6 +34,7 @@
 </nav>
 </header>
 <main><!--buildscriptdivider$header-content--><!-- your content goes here-->
+<script src="profile/page.js" async defer></script>
 <section id="info">
 <div id="picture">
 </div>
@@ -41,47 +42,106 @@
 </div>
 <div id="gsignun">
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
-<script>
-function onSignIn(googleUser) {
-console.log('loaded');
-var profile = googleUser.getBasicProfile();
-document.getElementById('picture').innerHTML =  "<img id='profilePicture' src='" + profile.getImageUrl() + "'/><br>";
-document.getElementById('name').innerHTML = profile.getName() + "<br>";
-console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-console.log('Full Name: ' + profile.getName());
-console.log('Given Name: ' + profile.getGivenName());
-console.log('Family Name: ' + profile.getFamilyName());
-console.log("Image URL: " + profile.getImageUrl());
-console.log("Email: " + profile.getEmail());
-}
-</script>
 <a href="#" onclick = "signOut();">Sign out</a>
-<script>
-function signOut(){
-var auth2 = gapi.auth2.getAuthInstance();
-auth2.signOut().then(function() {
-document.getElementById('picture').innerHTML='';
-document.getElementById('name').innerHTML='';
-document.location.href="index.html";
-});
-}
-</script>
 </div>
 </section>
 <section class="row">
 <section id="friends">
-your friends :
+<h2>Friends</h2>
+<form>
+<input type="checkbox" name="friend[]" value="friend1"> Amayas<br>
+<input type="checkbox" name="friend[]" value="friend2"> Daniel<br>
+<input type="checkbox" name="friend[]" value="friend3"> Jean<br>
+<input type="checkbox" name="friend[]" value="friend4"> Marla<br>
+</form>
 </section>
 <section id="create_event">
-<div id="create">
-choose date...
+<h2>Schedule an event</h2>
+<div id="schedular">
+<form>
+<div>
+Start:
+<input id="sdate" type="date" name="sdate">
 </div>
-<div id="event">
-possible
+<div>
+End:
+<input id="edate" type="date" name="edate" onclick="datelimit();">
+</div>
+<div>
+Min time:
+<input id="mintime" type="time" name="mintime">
+</div>
+<div>
+Max time:
+<input id="maxtime" type="time" name="maxtime" onclick="timelimit();">
+</div>
+<div>
+Length:
+<input type="text" name="hours">
+</div>
+<div>
+Name:
+<input id="event" type="text" name="event">
+</div>
+<div>
+<button class="button" type="submit" onclick="replace3();">Check availability</button>
+</div>
+</form>
 </div>
 </section>
 <section id="events">
-your recommanded events:
+<h2>Recommanded events</h2>
+<div class="event">
+<h3>Archery games at uOttawa</h3>
+<div class="event_image_container">
+<img class="event_image" src="https://uocal.uottawa.ca/sites/default/files/styles/260px_width/public/events/media/uOcal-Archery%20games-1.jpg?itok=2Bx73rlF">
+<div>
+<button class="small_button" type="submit" onclick="">Add to calendar</button>
+</div>
+</div>
+<div class="event_description">
+Are you a fan of dodgeball and paintball? Participate in an action-packed activity...
+<br>
+<br>
+<div class="event_time">
+Friday, 9 November 2018 - 1:30 pm to Wednesday, 14 November 2018 - 3:30 pm
+</div>
+</div>
+</div>
+<div class="event">
+<h3>Archery games at uOttawa</h3>
+<div class="event_image_container">
+<img class="event_image" src="https://uocal.uottawa.ca/sites/default/files/styles/260px_width/public/events/media/uOcal-Archery%20games-1.jpg?itok=2Bx73rlF">
+<div>
+<button class="small_button" type="submit" onclick="">Add to calendar</button>
+</div>
+</div>
+<div class="event_description">
+Are you a fan of dodgeball and paintball? Participate in an action-packed activity...
+<br>
+<br>
+<div class="event_time">
+Friday, 9 November 2018 - 1:30 pm to Wednesday, 14 November 2018 - 3:30 pm
+</div>
+</div>
+</div>
+<div class="event">
+<h3>Archery games at uOttawa</h3>
+<div class="event_image_container">
+<img class="event_image" src="https://uocal.uottawa.ca/sites/default/files/styles/260px_width/public/events/media/uOcal-Archery%20games-1.jpg?itok=2Bx73rlF">
+<div>
+<button class="small_button" type="submit" onclick="">Add to calendar</button>
+</div>
+</div>
+<div class="event_description">
+Are you a fan of dodgeball and paintball? Participate in an action-packed activity...
+<br>
+<br>
+<div class="event_time">
+Friday, 9 November 2018 - 1:30 pm to Wednesday, 14 November 2018 - 3:30 pm
+</div>
+</div>
+</div>
 </section>
 </section>
 <!--buildscriptdivider$content-footer--></main>
