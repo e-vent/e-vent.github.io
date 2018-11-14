@@ -38,6 +38,7 @@ nextEventID++;
 const cloned = template.cloneNode(true);
 cloned.querySelector("h2").textContent = parsed.name;
 cloned.querySelector(".evt-desc").textContent = parsed.desc;
+cloned.querySelector(".evt-bg").style.backgroundImage = "url(../cdn/" + parsed.bg + ".jpg";
 eventRoot.prepend(cloned);
 setTimeout(doupdate, 500)
 }, function() {
