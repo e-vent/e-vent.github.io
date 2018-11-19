@@ -11,7 +11,7 @@ background-position: center;
 margin: 0;
 flex-wrap: wrap;
 }
-.evt-bg, .human-bg, .parallax {
+.evt-bg, .human-bg, .parallax, .mapimg {
 background-size: cover;
 }
 .parallax {
@@ -103,7 +103,7 @@ width: 300px;
 opacity: 0.8;
 color: white;
 }
-.evt:hover, .human:hover {
+.evt:hover {
 z-index: 1;
 opacity: 1;
 transform: scale(1.05);
@@ -135,17 +135,20 @@ color:black
 ::-webkit-scrollbar {
 width: 10px;
 }
-/* Track */
 ::-webkit-scrollbar-track {
 background: #f1f1f1;
 }
-/* Handle */
 ::-webkit-scrollbar-thumb {
 background: #888;
 border-radius: 2px;
 }
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background: #555;
+}
+.mapimg {
+position: relative;
+}
+.mapimg>a {
+position: absolute;
 }
 
