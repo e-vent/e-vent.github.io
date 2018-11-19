@@ -11,7 +11,7 @@ background-position: center;
 margin: 0;
 flex-wrap: wrap;
 }
-.evt-bg, .parallax {
+.evt-bg, .human-bg, .parallax {
 background-size: cover;
 }
 .parallax {
@@ -68,31 +68,43 @@ font-size: 40px;
 /*noinspection CssNoGenericFontName*/
 font-family: "Noto Color Emoji"
 }
-.evt-bg {
-height: 200px;
+.evt-bg, .human-bg {
 position: relative;
 }
-.evt-bg>h2 {
+.evt-bg {
+height: 200px;
+}
+.human-bg {
+height: 400px;
+}
+.evt-bg>h2, .human-bg>h2 {
 position: absolute;
 left: 20px;
 bottom: 20px;
 }
-.evt-desc {
+.evt-desc, .human-desc {
 padding: 20px;
 white-space: normal;
 text-overflow: ellipsis;
 }
-.evt {
+.evt, .human {
 background-color: #7C7FC1;
-width: 500px;
 display: inline-block;
-margin-right: 20px;
-opacity: 0.8;
 transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 text-decoration: none;
+}
+.evt {
+width: 500px;
+margin-right: 20px;
 color: black;
 }
-.evt:hover {
+.human {
+width: 300px;
+opacity: 0.8;
+color: white;
+}
+.evt:hover, .human:hover {
+z-index: 1;
 opacity: 1;
 transform: scale(1.05);
 }
