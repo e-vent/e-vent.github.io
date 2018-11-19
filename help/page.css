@@ -18,7 +18,7 @@ padding-bottom: 75px;
 padding-left: 20px;
 font-size: 8vmin;
 }
-.q {
+details>summary {
 background: #7C7FC1;
 padding-bottom: 20px;
 padding-top: 20px;
@@ -26,7 +26,7 @@ padding-left: 20px;
 color: white;
 font-size: 3vmin;
 }
-.ans {
+details>p, details>div {
 padding-top: 10px;
 padding-bottom: 75px;
 padding-left: 20px;
