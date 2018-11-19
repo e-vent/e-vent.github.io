@@ -1,5 +1,6 @@
-const eventRoot = $('#newevents')[0];
-const template = $('#evt-template')[0].content.querySelector(".evt");
+(function () {
+const eventRoot = document.getElementById('newevents');
+const template = document.getElementById('evt-template').content.querySelector(".evt");
 const baseURL = 'https://danielzgtg.duckdns.org';
 function openXHR(endpoint, goodCb, badCb) {
 const xhr = new XMLHttpRequest();
@@ -9,6 +10,7 @@ xhr.onload = function() {
 goodCb(xhr.responseText)
 };
 if (badCb != null) {
+// noinspection UnnecessaryLocalVariableJS
 const f = function() {
 badCb()
 };
@@ -26,7 +28,7 @@ console.log('Count response ' + text);
 const count = parseInt(text);
 console.log('Have ' + count + ' events');
 if (count > nextEventID + 10) {
-console.log('Skipping old events to keep up with feed')
+console.log('Skipping old events to keep up with feed');
 nextEventID = count - 5
 }
 if (nextEventID < count) {
@@ -53,3 +55,4 @@ setTimeout(doupdate, 2000)
 })
 }
 setTimeout(doupdate, 1000);
+})();

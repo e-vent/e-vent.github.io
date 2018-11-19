@@ -1,3 +1,4 @@
+(function () {
 let images = [];
 function preload() {
 for (let i = 0; i < preload.arguments.length; i++) {
@@ -16,3 +17,4 @@ preload(
 "logo/logovector3.svg",
 "common/down-arrow-v2.png",
 );
+})();

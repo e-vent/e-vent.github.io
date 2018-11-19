@@ -1,14 +1,14 @@
-const root = $('html');
+(function () {
+const root = document.documentElement;
 function update() {
-if (root.scrollTop() > 190) {
-root.addClass('nav2');
+if (root.scrollTop > 190) {
+root.classList.add('nav2');
 } else {
-root.removeClass('nav2');
+root.classList.remove('nav2');
 }
 }
-const main = $('main');
-$(function() {
-main.addClass('nav3');
+const main = document.getElementsByTagName('main')[0];
+main.classList.add('nav3');
 update();
-$(window).scroll(update);
-});
+window.addEventListener('scroll', update);
+})();

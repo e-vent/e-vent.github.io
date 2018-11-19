@@ -1,3 +1,4 @@
+(function () {
 function listToRadioForm(l) {
 var text = "<form id='rf'>";
 var i;
@@ -44,3 +45,4 @@ document.getElementById('name').innerHTML='';
 document.location.href="index.html";
 });
 }
+})();
