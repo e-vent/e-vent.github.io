@@ -1,22 +1,8 @@
 @charset "UTF-8";
-.h {
+h1 {
 text-align: center;
 padding-bottom: 80px;
-}
-.t {
 font-size: 13vmin;
-}
-.FAQ {
-width: 100%;
-}
-main {
-padding-top: 100px;
-}
-.FAQtitle {
-padding-top: 30px;
-padding-bottom: 75px;
-padding-left: 20px;
-font-size: 8vmin;
 }
 details>summary {
 background: #7C7FC1;
