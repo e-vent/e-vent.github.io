@@ -11,7 +11,7 @@ background-position: center;
 margin: 0;
 flex-wrap: wrap;
 }
-.evt-bg, .parallax {
+.card-bg, .parallax {
 background-size: cover;
 }
 .parallax {
@@ -68,16 +68,16 @@ font-size: 40px;
 /*noinspection CssNoGenericFontName*/
 font-family: "Noto Color Emoji"
 }
-.evt-bg {
+.card-bg {
 height: 200px;
 position: relative;
 }
-.evt-bg>h2 {
+.card-bg>h2 {
 position: absolute;
 left: 20px;
 bottom: 20px;
 }
-.evt-desc {
+.card-desc {
 padding: 20px;
 white-space: normal;
 text-overflow: ellipsis;
