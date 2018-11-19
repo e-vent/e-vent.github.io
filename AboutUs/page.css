@@ -1,8 +1,23 @@
 main {
 background: url("background.jpg") no-repeat fixed center/cover;
 }
-.flex-container {
+.humans {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
+}
+.mapimg {
+background-image: url("editedeyes.jpg");
+height: 48vmax;
+width: 76vmax;
+}
+.mapimg>a {
+top: 0;
+width: 20%;
+height: 100%;
+}
+.human:hover {
+z-index: 1;
+opacity: 1;
+transform: scale(1.05);
 }
