@@ -1,7 +1,8 @@
 (function () {
 const eventRoot = document.getElementById('newevents');
 const template = document.getElementById('evt-template').content.querySelector(".evt");
-const baseURL = 'https://danielzgtg.duckdns.org';
+const baseURL = 'https://example.com';
+if (true) return;
 function openXHR(endpoint, goodCb, badCb) {
 const xhr = new XMLHttpRequest();
 xhr.open('GET', baseURL + endpoint);
